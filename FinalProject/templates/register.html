@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+{% block body %}
+<div class="container">
+     <form class="form-register" method='POST' action="/register">
+       <h2 class="form-register-heading">Please register</h2>
+       {{ form.hidden_tag() }}
+       {{ wtf.form_field(form.username) }}
+       {{ wtf.form_field(form.password) }}
+       {{ wtf.form_field(form.email)    }}
+       <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+     </form>
+
+   </div> <!-- /container -->
+{% endblock %}

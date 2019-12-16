@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Libre+Baskerville');
+
+body {
+  background-color:  #1e1e1e;
+  Font-Family: 'Cabin', Sans-Serif;
+
+}
+
+.welcometext {
+  text-align: center;
+  margin-top: 150px;
+  color: white;
+}
+
+ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+span {
+  margin-left: 10px;
+  font-size: 15px;
+}
+.first{
+  float: left;
+  width: 50%;
+}
+
+.second {
+  float: left;
+  width: 45%;
+  height: 600px;
+  margin-top: 50px;
+  padding-bottom: 12px;
+}
+
+label {
+  color: white;
+  font-Family: 'Cabin', Sans-Serif;
+  font-Size: 16px;
+  font-weight: 1;
+}
+
+.booklist {
+  margin-top: 10px;
+  color: white;
+}
+
+
+
+.navbar {
+  background-color: #1e1e1e;
+  border-style: none;
+  margin-top: 50px;
+}
+
+
+h1 {
+  color: #ffffff;
+  Font-Family: 'Cabin', Sans-Serif;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  color: #111;
+  Font-Family: 'Cabin', Sans-Serif;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+.navbar-default .navbar-brand {
+  color: white;
+  Font-Family: 'Cabin', Sans-Serif;
+  Font-Size: 16px;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: white;
+  Font-Family: 'Cabin', Sans-Serif;
+  Font-Size: 16px;
+}

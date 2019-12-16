@@ -1,0 +1,46 @@
+1. Project Type: Plan A
+2. Solo Project: Tseki Lhamo
+3. Link to live Application:
+4. Link to Github Code Repository: Make sure that you provide the link to project code and not the link to your homepage of GitHub repository.
+5. List of Technologies/API's Used
+  - Goodreads API
+  - SQLAlchemy
+  - WTForms
+  - Bootstrap templates
+  - User Session Management
+  - Flask
+6. Detailed Description of the project (No more than 500 words)
+This application is called Book-Keeper. A user can add books that they have read
+and see a list of all the books they read in the past.
+
+7. List of Controllers and their short description (No more than 50 words for each controller)
+- login: redirection to login.html page
+- logout: redirection to login.html page after clicking logging out
+- register: redirection to registration.html for registering an account
+- about: page for the application's description
+- dashboard: redirection to a user's dashboard displays their book database
+            and allows them to add new books to the database
+
+8. List of Views and their short description (No more than 50 words for each view)
+- layout.html: the template that is extended by other views
+- login.html: page for logging in
+- register.html: page for registering a new account
+- dashboard.html: page for displaying a user's books database
+- about.html: page for description of the application
+- home.html: welcome page for the application
+- _navbar.html: nav bar that is used for all pages
+
+9. List of Tables, their Structure and short description
+- Books table:
+    structure: id, title, year, rating, image_url, ownder_id
+    Lists all books that are added by users. All book titles are unique. It keeps
+    track of book title, year published, rating and image url.
+- Authors table:
+    structure: author, author name, books they have written that are in the book list
+    
+- Readers table: an association table to keep track of unique lists of books for each user.
+The table keeps track of which book a specific user has in his/her list.
+e.g user1 will have a different book list to user2
+
+10. References/Resources: List all the references, resources or the online templates that were used for the project.
+https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css
