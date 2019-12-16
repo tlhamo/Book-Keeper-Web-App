@@ -12,7 +12,7 @@ defusedxml==0.5.0
 entrypoints==0.3
 Flask==1.1.1
 Flask-WTF==0.14.2
-gunicorn
+gunicorn==20.0.0
 idna==2.8
 ipykernel==5.1.0
 ipython==7.2.0
@@ -48,6 +48,7 @@ Pygments==2.3.1
 pyparsing==2.3.1
 pytest==4.2.0
 python-dateutil==2.7.5
+python-dotenv==0.10.3
 pyzmq==17.1.2
 requests==2.22.0
 Send2Trash==1.5.0
