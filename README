@@ -1,6 +1,6 @@
 1. Project Type: Plan A
 2. Solo Project: Tseki Lhamo
-3. Link to live Application:
+3. Link to live Application: https://lhamo012finalproject.herokuapp.com/
 4. Link to Github Code Repository: Make sure that you provide the link to project code and not the link to your homepage of GitHub repository.
 5. List of Technologies/API's Used
   - Goodreads API
@@ -37,10 +37,15 @@ and see a list of all the books they read in the past.
     track of book title, year published, rating and image url.
 - Authors table:
     structure: author, author name, books they have written that are in the book list
-    
+
 - Readers table: an association table to keep track of unique lists of books for each user.
 The table keeps track of which book a specific user has in his/her list.
 e.g user1 will have a different book list to user2
 
 10. References/Resources: List all the references, resources or the online templates that were used for the project.
 https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css
+https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700"
+https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css"
+https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"

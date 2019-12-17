@@ -3,6 +3,7 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, BooleanField
 from wtforms.validators import InputRequired, Email, Length
 from flask_login import UserMixin
+from sqlalchemy import PrimaryKeyConstraint
 
 class RegisterForm(FlaskForm):
 	username = StringField('username', validators=[InputRequired(), Length(min=4, max=20)])
@@ -15,7 +16,8 @@ class LoginForm(FlaskForm):
 
 readers = datab.Table('readers',
     datab.Column('user_id', datab.Integer, datab.ForeignKey('user.id')),
-    datab.Column('book_id', datab.Integer, datab.ForeignKey('book.id'))
+    datab.Column('book_id', datab.Integer, datab.ForeignKey('book.id')),
+	PrimaryKeyConstraint('user_id', 'book_id')
     )
 
 class User(datab.Model, UserMixin):
@@ -32,7 +34,7 @@ class Author(datab.Model):
 
 class Book(datab.Model):
     id = datab.Column(datab.Integer, primary_key=True)
-    title = datab.Column(datab.String(50), unique=True)
+    title = datab.Column(datab.String(50))
     year = datab.Column(datab.Integer)
     rating = datab.Column(datab.Integer)
     image_url = datab.Column(datab.String)
