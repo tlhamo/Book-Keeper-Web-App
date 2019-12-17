@@ -60,9 +60,7 @@ def grocery(id):
 @app.route('/dashboard')
 @login_required
 def dashboard():
-	print("current user id"+ str(flask_login.current_user.id))
 	reads = list(datab.session.query(readers).filter(readers.c.user_id==flask_login.current_user.id))
-	print("reads "+str(reads))
 	authors = list(datab.session.query(Author.name))
 	data = []
 	authorsdata = {}
@@ -77,5 +75,4 @@ def dashboard():
 		else:
 			authorsdata[tup[0]] = 1
 	values = authorsdata.values()
-	print("authorsdata  "+ str(authorsdata.values()))
 	return render_template('dashboard.html', data=data, authorsdata = authorsdata, values=values)
